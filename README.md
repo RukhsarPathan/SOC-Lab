@@ -27,6 +27,16 @@ Building a SOC home lab using:
 - Splunk
 - Sysmon
 
+- Windows 11 VM and Kali Linux VM running in VirtualBox.
+
+### Virtual Machines
+
+![VM Overview](Screenshots/Vms%20screenshot.png)
+
+### Windows and Kali Setup
+
+![Windows and Kali](Screenshots/WIndowsKali.png)
+
 ## Project Status
 
 🚧 In Progress
