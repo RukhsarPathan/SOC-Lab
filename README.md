@@ -29,12 +29,15 @@ This project documents the creation of a Security Operations Center (SOC) home l
 Kali Linux VM (Attacker)
         │
         ▼
+
+        
 Windows 11 VM (Target)
 ├── Sysmon
 ├── Windows Event Logs
 └── Event Viewer Analysis
         │
         ▼
+        
 Splunk (Coming Soon)
 
 ## Lab Components
@@ -94,7 +97,7 @@ Splunk (Coming Soon)
 
 *Sysmon successfully installed and operational.*
 
-[Insert Screenshot]
+[Insert Screenshot](SysmonInstallation.png)
 
 ### Event ID 1 Analysis
 
