@@ -103,7 +103,7 @@ Splunk (Coming Soon)
 
 *Process creation monitoring using Sysmon Event ID 1.*
 
-![Event ID](Screenshots/Seventid.png)
+![Event ID](Screenshots/eventid.png)
 
 ### Microsoft Edge Process Creation
 
