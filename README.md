@@ -97,18 +97,18 @@ Splunk (Coming Soon)
 
 *Sysmon successfully installed and operational.*
 
-[Insert Screenshot](Screenshots/Sysmon-install.png)
+![Insert Screenshot](Screenshots/Sysmon-install.png)
 
 ### Event ID 1 Analysis
 
 *Process creation monitoring using Sysmon Event ID 1.*
 
-[Event ID](Screenshots/Seventid.png)
+![Event ID](Screenshots/Seventid.png)
 
 ### Microsoft Edge Process Creation
 
 Sysmon Event ID 1 capturing the execution of Microsoft Edge (msedge.exe) and associated process metadata.
-[MS Edge Execution](Screenshots/msedgesysmon.png)
+![MS Edge Execution](Screenshots/msedgesysmon.png)
 
 ## Project Status
 
