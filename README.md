@@ -110,6 +110,40 @@ Splunk (Coming Soon)
 Sysmon Event ID 1 capturing the execution of Microsoft Edge (msedge.exe) and associated process metadata.
 ![MS Edge Execution](Screenshots/msedgesysmon.png)
 
+### Splunk Enterprise Installation and Configuration 
+
+## Objective
+
+Install and configure Splunk Enterprise on the host machine to serve as the Security Information and Event Management (SIEM) platform for collecting, indexing, and analyzing security logs from the Windows 11 virtual machine.
+
+## Completed
+
+* Downloaded Splunk Enterprise 10.4.0 for Windows.
+* Installed Splunk Enterprise on the Windows host machine.
+* Created the Splunk administrator account during installation.
+* Successfully launched the Splunk web interface.
+* Verified access to the Splunk Enterprise dashboard using a web browser.
+* Confirmed the SIEM platform is operational and ready to receive log data.
+
+## Skills Practiced
+
+* SIEM deployment
+* Splunk Enterprise installation
+* Initial Splunk configuration
+* Web interface administration
+* Security monitoring infrastructure setup
+
+## Key Learning
+
+Splunk Enterprise serves as the central platform for collecting, indexing, searching, and analyzing security data. Rather than storing logs on individual systems, endpoint devices can forward their logs to Splunk, allowing security analysts to investigate events from a centralized location.
+
+## Outcome
+
+Successfully deployed Splunk Enterprise on the host machine, establishing the core SIEM infrastructure for the SOC lab. The environment is now prepared for integrating the Windows 11 virtual machine using the Splunk Universal Forwarder and ingesting Sysmon and Windows Event Logs for security monitoring.
+
+![Splunk Installation](Screenshots/Splunk-install.png)
+
+
 ## Project Status
 
 🚧 In Progress
