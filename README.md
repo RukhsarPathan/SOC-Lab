@@ -141,7 +141,106 @@ Splunk Enterprise serves as the central platform for collecting, indexing, searc
 
 Successfully deployed Splunk Enterprise on the host machine, establishing the core SIEM infrastructure for the SOC lab. The environment is now prepared for integrating the Windows 11 virtual machine using the Splunk Universal Forwarder and ingesting Sysmon and Windows Event Logs for security monitoring.
 
+
 ![Splunk Installation](Screenshots/Splunk-install.png)
+I actually love this idea. Instead of dumping screenshots, you're creating a **portfolio** where every screenshot tells a story. That's exactly how you impress interviewers. They can scroll through your README and you'll have talking points for each image.
+
+---
+
+# 📸 Screenshot 1 — Splunk Enterprise Installation
+
+![Splunk Installation](Splunk-install.png)
+
+## Installing Splunk Enterprise
+
+**What this shows**
+
+This screenshot captures the successful installation of **Splunk Enterprise** on my Windows host machine. Splunk Enterprise serves as the central Security Information and Event Management (SIEM) platform for my home SOC lab.
+
+**What I learned**
+
+* Installed Splunk Enterprise as the primary SIEM.
+* Configured the web interface (port 8000).
+* Created an administrator account.
+* Verified that the Splunk management console was operational.
+
+
+
+# 📸 Screenshot 2 — Installing Splunk Universal Forwarder
+
+![Universal Forwarder](uni-frowarder.png)
+
+## Installing the Splunk Universal Forwarder
+
+This screenshot documents the installation of the **Splunk Universal Forwarder** on my Windows 11 virtual machine (SOC-WIN11).
+
+The Universal Forwarder is a lightweight agent that securely collects Windows Event Logs and forwards them to the Splunk Enterprise server.
+
+**Configuration**
+
+* Installed Universal Forwarder
+* Configured the receiving server
+* Configured forwarding to Splunk Enterprise
+* Restarted the service
+* Verified connectivity
+
+
+> "Rather than reading logs locally, enterprise environments install lightweight agents called forwarders on endpoints. These agents continuously collect logs and securely send them to the SIEM for centralized monitoring. This closely mirrors how Splunk deployments work in production environments."
+
+
+
+# 📸 Screenshot 3 — Windows Security Logs Successfully Received
+
+![Security Logs](logs.png)
+
+## Windows Security Event Logs Successfully Ingested
+
+**What this shows**
+
+This screenshot confirms that my Windows 11 endpoint (**SOC-WIN11**) is successfully forwarding Windows Security Event Logs into Splunk Enterprise.
+
+I verified log ingestion by querying:
+
+```spl
+source="WinEventLog:Security"
+```
+
+The search returned more than **3,000 security events**, confirming successful communication between the endpoint and the SIEM.
+
+Events observed include:
+
+* Event ID **4624** – Successful Logon
+* Event ID **4672** – Special Privileges Assigned to New Logon
+* Windows Security Log events
+* Host: **SOC-WIN11**
+
+**Skills Demonstrated**
+
+* SIEM configuration
+* Windows Event Log collection
+* Log forwarding
+* SPL searches
+* Endpoint monitoring
+* Security log analysis
+* Troubleshooting data ingestion
+
+> "This was the point where I verified my lab was functioning correctly. The Windows endpoint was continuously forwarding security logs into Splunk Enterprise. I used SPL searches to validate the incoming data and confirmed authentication-related events were being collected successfully. This established the foundation for future detection engineering, dashboard creation, and threat hunting exercises."
+
+---
+
+# 🚀 What's Next
+
+The next phase of this lab will build on this foundation by adding:
+
+* Install Sysmon for enhanced endpoint telemetry
+* Configure Sysmon log collection in Splunk
+* Simulate attacks from Kali Linux
+* Detect failed logins (Event ID 4625)
+* Build SOC dashboards
+* Write SPL detection queries
+* Perform incident investigations
+
+---
 
 
 ## Project Status
