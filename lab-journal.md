@@ -108,3 +108,74 @@ Splunk Enterprise serves as the central platform for collecting, indexing, searc
 
 Successfully deployed Splunk Enterprise on the host machine, establishing the core SIEM infrastructure for the SOC lab. The environment is now prepared for integrating the Windows 11 virtual machine using the Splunk Universal Forwarder and ingesting Sysmon and Windows Event Logs for security monitoring.
 
+# Day 5 Splunk SIEM Successfully Receiving Windows Logs 
+Objective
+
+Configure a basic SOC lab by forwarding Windows Security logs from a Windows 11 virtual machine to Splunk Enterprise running on the host PC.
+
+Environment
+
+Host Machine
+
+Windows 11
+Splunk Enterprise
+
+Virtual Machine
+
+Windows 11
+Hostname: SOC-WIN11
+Splunk Universal Forwarder installed
+Tasks Completed
+
+✅ Installed Splunk Universal Forwarder on Windows 11 VM
+
+✅ Configured deployment/output settings
+
+✅ Configured Splunk Enterprise to receive forwarded data on TCP port 9997
+
+✅ Restarted the Universal Forwarder
+
+✅ Verified connectivity between the VM and Splunk Enterprise
+
+✅ Confirmed Windows Event Logs were successfully ingested
+
+Successfully receiving:
+
+Windows Security Logs
+Windows System Logs
+SPL Searches Tested
+index=*
+host=*
+source="WinEventLog:Security"
+
+Verified Event IDs including:
+
+4624 — Successful Logon
+4672 — Special Privileges Assigned
+Windows Security Events streaming successfully
+Challenges Encountered
+Initially no logs appeared in Splunk.
+Realized Splunk Enterprise was not configured to receive forwarded data.
+Enabled receiving on TCP port 9997.
+Restarted the Universal Forwarder.
+Successfully confirmed data ingestion.
+Skills Practiced
+Splunk Enterprise Administration
+Splunk Universal Forwarder
+Windows Event Logs
+Windows Security Logs
+Basic SIEM Administration
+Log Ingestion
+Event Searching using SPL
+Troubleshooting data forwarding
+Next Steps
+Install Sysmon on Windows VM
+Generate failed login events (4625)
+Simulate attacks from Kali Linux
+Build Splunk dashboards
+Create detections for authentication events
+Begin basic threat hunting exercises
+Reflection
+
+Today was one of the biggest milestones in my cybersecurity journey. For the first time, I successfully configured a SIEM to collect real Windows Security logs from a separate virtual machine. Although it took troubleshooting and patience, seeing live security events arrive in Splunk confirmed that the lab is functioning correctly. This setup will serve as the foundation for future detection engineering, incident response, and threat hunting practice.
+
