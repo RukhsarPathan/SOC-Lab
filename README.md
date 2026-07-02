@@ -162,7 +162,7 @@ This screenshot captures the successful installation of **Splunk Enterprise** on
 
 # 📸 Screenshot 2 — Installing Splunk Universal Forwarder
 
-![Universal Forwarder](Screenshots/uni-frowarder.png)
+![Universal Forwarder](Screenshots/uni-forwarder.png)
 
 ## Installing the Splunk Universal Forwarder
 
@@ -185,7 +185,7 @@ The Universal Forwarder is a lightweight agent that securely collects Windows Ev
 
 # 📸 Screenshot 3 — Windows Security Logs Successfully Received
 
-![Security Logs](Screenshots/logs.png)
+![Security Logs](Screenshots/logs.png) 
 
 ## Windows Security Event Logs Successfully Ingested
 
