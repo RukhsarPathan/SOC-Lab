@@ -143,15 +143,9 @@ Successfully deployed Splunk Enterprise on the host machine, establishing the co
 
 
 ![Splunk Installation](Screenshots/Splunk-install.png)
-I actually love this idea. Instead of dumping screenshots, you're creating a **portfolio** where every screenshot tells a story. That's exactly how you impress interviewers. They can scroll through your README and you'll have talking points for each image.
 
----
 
 # 📸 Screenshot 1 — Splunk Enterprise Installation
-
-![Splunk Installation](Splunk-install.png)
-
-## Installing Splunk Enterprise
 
 **What this shows**
 
@@ -168,7 +162,7 @@ This screenshot captures the successful installation of **Splunk Enterprise** on
 
 # 📸 Screenshot 2 — Installing Splunk Universal Forwarder
 
-![Universal Forwarder](uni-frowarder.png)
+![Universal Forwarder](Screenshots/uni-frowarder.png)
 
 ## Installing the Splunk Universal Forwarder
 
@@ -191,7 +185,7 @@ The Universal Forwarder is a lightweight agent that securely collects Windows Ev
 
 # 📸 Screenshot 3 — Windows Security Logs Successfully Received
 
-![Security Logs](logs.png)
+![Security Logs](Screenshots/logs.png)
 
 ## Windows Security Event Logs Successfully Ingested
 
